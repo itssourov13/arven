@@ -1,29 +1,29 @@
 # Task State
 
-## Completed
+## V3 completed
 
-- V2 branch created: `v2/brand-arven`
-- ARVEN brand and content system
-- Public image refresh
-- Hero / manifesto / address / architecture rewrite
-- The Club
-- Materials
-- Residence Explorer
-- Residence-focused enquiry form
-- EN / AR RTL pass
-- Responsive refinements
-- Accessibility alt text and focus states
-- Favicon cleanup
-- Build + browser smoke verification
+- Created branch: v3/arven-experience
+- Interactive Tower Navigator
+- Residence Profile detail layer
+- Residence comparison table
+- Material Atelier
+- View Finder
+- The Ritual wellness chapter
+- The Service hospitality layer
+- A Day at ARVEN timeline
+- ARVEN Notes editorial layer
+- Ask ARVEN local concept concierge
+- The Light cycle
+- Signature Residence Penthouse chapter
+- Additional public reference imagery
+- Shared src/data/v3.js content model
+- EN / AR RTL handling for new V3 interface copy
+- Production build and browser interaction smoke verification
 - Documentation refresh
 
-## Intentionally deferred
+## Remaining for the next phase
 
-- Real project renders and floorplans
-- Native Arabic copy review
-- Production domain/trademark validation
-- Final physical-device visual QA
-
-## Next likely stage
-
-Replace concept imagery and fictional project figures with approved real content, then perform the final production QA pass.
+- Replace public reference imagery with approved project renders when available.
+- Replace fictional figures, prices and distances with approved data if the concept becomes real.
+- Final native Arabic editorial review and physical-device visual QA.
+- Performance profiling on representative Android and desktop hardware.

@@ -17,5 +17,9 @@ export const IMAGES = {
   pool: u("photo-1773393767558-97ba4dc319f4", 2200),
   spa: u("photo-1772616748530-7cd73053f326", 1600),
   map: u("photo-1524661135-423995f22d0b", 1800),
-  dusk: u("photo-1751473199442-3913fc8a6de2", 2200)
+  dusk: u("photo-1751473199442-3913fc8a6de2", 2200),
+  cityDusk: u("photo-1753723254635-def832e978b3", 2200),
+  wellness2: u("photo-1774876549393-46872415dff3", 1600),
+  terrace: u("photo-1775733923991-e7223f9f44bc", 1800),
+  signature: u("photo-1721613883025-aa2f1a19d30d", 2000)
 };

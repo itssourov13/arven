@@ -120,6 +120,12 @@ function applyLang(){
       el.textContent = t(k);
     }
   });
+  document.querySelectorAll("[data-en][data-ar]").forEach(el => {
+    const value = lang === "ar" ? el.dataset.ar : el.dataset.en;
+    if (value == null) return;
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") el.setAttribute("placeholder", value);
+    else el.textContent = value;
+  });
   const lb = document.getElementById("langBtn");
   if (lb) lb.textContent = lang === "ar" ? "EN" : "عربي";
 }

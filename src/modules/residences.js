@@ -25,6 +25,7 @@ export function initResidenceExplorer(){
     root.querySelector("[data-res-price]").textContent = ar ? d.price[1] : d.price[0];
     buttons.forEach(b => b.classList.toggle("on", b.dataset.resOption === key));
     root.querySelector("[data-res-plan]")?.setAttribute("data-plan", key);
+    root.dispatchEvent(new CustomEvent("arven:residence-change", { detail:{ key } }));
   };
   buttons.forEach(b => b.addEventListener("click", () => set(b.dataset.resOption)));
   set(buttons.find(b => b.classList.contains("on"))?.dataset.resOption || "one");
