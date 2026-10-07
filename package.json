@@ -1,10 +1,20 @@
 {
-  "name": "alvenar-residences",
-  "version": "1.0.0",
+  "name": "arven-residences",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Cinematic luxury real-estate site: Vite, GSAP ScrollTrigger, Lenis, Three.js hero shader.",
-  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
-  "dependencies": { "gsap": "^3.12.5", "lenis": "^1.1.13", "three": "^0.160.0" },
-  "devDependencies": { "vite": "^5.4.0" }
+  "description": "Cinematic bilingual luxury waterfront residence concept for a fictional Dubai Water Canal development.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.13",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
 }

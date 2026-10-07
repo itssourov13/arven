@@ -1,11 +1,37 @@
 # Project Context
 
-**What:** Marketing site for *Alvenar Residences*, a fictional super-tall waterfront tower, in the language of architecture and fashion editorials rather than property portals.
+## What
 
-**Experience:** One continuous scroll story: hero, manifesto, tower, architecture, interiors, amenities, residences, lifestyle, location, enquiry. Each beat has its own composition (full-bleed, asymmetric, pinned horizontal, layered depth, masked frame) so the page never repeats a card grid.
+**ARVEN Residences** is a fictional super-tall waterfront residence concept for the Dubai Water Canal, presented as a complete digital launch experience rather than a property portal.
 
-**Aesthetic:** near-black ground, warm stone text, a single muted gold accent, Fraunces display serif over Inter, with IBM Plex Sans Arabic for RTL. Restraint over effects: motion is slow, eased (expo/power), and tied to content.
+## Brand
 
-**Role of 3D/motion:** WebGL is used once, in the hero, to give the opening photograph depth (cover-fit, haze, pointer and scroll parallax). Everywhere else depth is achieved with transforms: layered amenity planes, perspective tilt, scrubbed masks.
+**ARVEN**
+**Where the city meets stillness.**
 
-**Content assumptions:** all copy, figures (186 m, 42 storeys, prices) and the location are placeholders for a fictional project. Photography is stock from Unsplash and is not project-specific.
+The identity is intentionally restrained: midnight backgrounds, limestone typography, muted aged brass, and a cooler canal-blue secondary tone. The tone is architectural, editorial and quietly confident.
+
+## Experience
+
+The story moves through:
+
+1. Hero / brand promise
+2. Manifesto
+3. The Address
+4. Architecture
+5. Interiors
+6. The Club
+7. Materials
+8. The Residences
+9. Residence Explorer
+10. Lifestyle
+11. Location
+12. Private Preview
+
+## Content principles
+
+Prefer concrete design language—light, proportion, water, privacy, service, wellness, material and arrival—over generic luxury claims.
+
+## Content assumptions
+
+All development figures, residence pricing, location framing and project copy are fictional placeholders. Distances are indicative concept values. Photography is public reference imagery and should eventually be replaced by commissioned/project renders.

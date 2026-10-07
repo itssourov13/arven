@@ -1,11 +1,32 @@
 # Architecture
 
-**Flow:** `index.html` loads `src/main.js`, which imports the stylesheet, resolves `data-img` keys to URLs, applies the language dictionary to `[data-t]` nodes, then boots modules in order: GL, cursor, magnetic, form, scroll, nav, pointer, preloader. The preloader finishes by calling `window.__introTL`, set in `scroll.js`, to play the hero intro.
+The runtime remains a lightweight Vite + ES modules site.
 
-**Modules**
-- `lib/env.js` reduced-motion and touch flags. `lib/i18n.js` EN/AR dictionary, `t()`, `applyLang()`, direction. `lib/text.js` char/word splitters (Arabic splits by word to keep letters joined).
-- `modules/scroll.js` Lenis + ScrollTrigger: reveals, counters, manifesto, pinned horizontal gallery, hero scroll-out, amenity depth layers, masked lifestyle frame. Falls back to plain reveals when reduced motion is on.
-- `modules/gl.js` one ShaderMaterial on a full-screen quad; renders only while visible and tab-visible.
-- `modules/nav.js` mobile menu, smooth anchors, active link via IntersectionObserver, residence pointer light. `pointer.js` perspective tilt for `.tilt`.
+## Boot flow
 
-**Assets:** all photos by key in `config/images.js`; local files go in `public/assets/images/`. **Dependencies:** three runtime packages, split into `three` and `motion` chunks. **Responsive:** `clamp()` type, breakpoints at 1000px and 620px, deliberate mobile layouts for amenities and lifestyle, lower WebGL DPR and no pointer effects on touch.
+`index.html` loads `src/main.js`, which resolves centralized image keys, applies language state, initializes the WebGL hero, interaction modules, Residence Explorer and scroll choreography.
+
+## Modules
+
+- `lib/env.js` — reduced-motion / touch detection
+- `lib/i18n.js` — EN/AR dictionary and RTL state
+- `lib/text.js` — hero / manifesto text splitting
+- `modules/gl.js` — Three.js hero atmosphere and texture parallax
+- `modules/scroll.js` — Lenis, ScrollTrigger, pins, reveals and depth motion
+- `modules/residences.js` — interactive residence selector
+- `modules/nav.js` — mobile menu, anchors and active state
+- `modules/form.js` — local-only enquiry validation/success state
+- `modules/cursor.js`, `magnetic.js`, `pointer.js` — desktop interaction polish
+- `modules/preloader.js` — intro sequence
+
+## Image strategy
+
+The hero always has a normal CSS image base. Three.js is an enhancement layer, so a shader texture failure or WebGL context loss does not remove the primary visual.
+
+## Responsive strategy
+
+Desktop uses editorial multi-column compositions and layered depth. At mobile widths, sections collapse intentionally, the hero title remains word-safe, Club layers stack, Explorer tabs become a compact grid, and full-bleed lifestyle imagery remains cinematic.
+
+## Accessibility
+
+Images have descriptive alt text where meaningful, decorative hero imagery is hidden from assistive technology, form fields retain labels, focus-visible states are present, and reduced-motion mode falls back to static reveals.

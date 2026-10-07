@@ -1,40 +1,63 @@
-# Alvenar Residences
+# ARVEN Residences
 
-A cinematic, bilingual (English / Arabic, RTL-aware) luxury real-estate site for a fictional 42-storey tower on the Dubai Water Canal. Vanilla JavaScript on Vite: no framework, because the page is one scroll narrative with no client-side state worth a component tree.
+A cinematic bilingual (English / Arabic, RTL-aware) luxury waterfront residence concept for a fictional Dubai Water Canal development.
+
+## V2 direction
+
+**ARVEN — Where the city meets stillness.**
+
+V2 shifts the project from a generic luxury-property presentation into an editorial launch experience built around water, architecture, light, privacy, wellness, service and materiality. The existing GSAP / Lenis / Three.js foundation is preserved and extended rather than replaced.
+
+## Experience
+
+- Cinematic WebGL hero with a public Dubai reference image and CSS image base fallback.
+- Editorial manifesto and tower/address story with scroll-linked depth.
+- Architecture story built around The Turn, The Light and The View.
+- Horizontal interiors gallery using public reference imagery.
+- **The Club**: water, wellness, study and private dining experiences.
+- **Materials**: travertine, smoked oak, brushed bronze and woven linen palette.
+- Six residence types with an interactive **Residence Explorer**.
+- Lifestyle chapter from first light to last light.
+- Indicative location story and private-preview enquiry flow.
+- English / Arabic language switching with RTL layout.
+- Reduced-motion support, keyboard focus states and responsive mobile composition.
 
 ## Stack
+
 | Package | Role |
 |---|---|
-| `vite` (dev) | dev server, bundling, hashed assets |
-| `gsap` (+ ScrollTrigger) | scroll choreography: reveals, pins, scrubbed masks, horizontal gallery |
-| `lenis` | smooth scrolling, driven from GSAP's ticker |
-| `three` | hero WebGL shader (cover-fit photo, haze, pointer parallax) |
+| Vite | dev server and production build |
+| GSAP + ScrollTrigger | scroll choreography and reveals |
+| Lenis | smooth scrolling |
+| Three.js | hero shader / atmospheric motion |
+| Vanilla JS | page modules and interaction |
 
 ## Structure
+
 ```
-index.html            semantic markup, one <section> per story beat
-src/main.js           entry: resolves images, applies language, boots modules
-src/config/images.js  every photo URL, keyed (swap to local files here)
-src/lib/              env flags, i18n dictionary (EN/AR), text splitting
-src/modules/          cursor, magnetic, gl, scroll, preloader, nav, pointer, form
-src/styles/main.css   design tokens + all styles
-public/assets/images/ place local images here (served at /assets/images/...)
-docs/                 context, state, architecture, decisions, tasks, changelog, handoff
+index.html
+src/main.js
+src/config/images.js
+src/lib/                 i18n, environment flags, text splitting
+src/modules/             cursor, nav, form, WebGL, scroll, explorer, etc.
+src/styles/main.css      design system and responsive layouts
+public/favicon.svg
+docs/                    project context, architecture, state and handoff
 ```
 
-## Features
-Preloader and hero intro, WebGL hero with CSS fallback, manifesto word-by-word reveal, tower stats counters, architecture plane with pointer perspective, pinned horizontal interiors gallery, layered-depth amenities, residence cards with pointer light, full-bleed masked lifestyle reveal, location, enquiry form, EN/AR switch, full-screen mobile menu (staggered, Esc, scroll lock), reduced-motion support.
+## Public imagery
+
+The concept uses public Unsplash image URLs so the visual system can be evaluated without a local asset package. URLs are centralized in `src/config/images.js`; project-specific renders can replace them later without changing section markup.
 
 ## Commands
+
 ```bash
 npm install
-npm run dev       # http://localhost:5173
-npm run build     # outputs dist/
-npm run preview   # serves dist/ locally
+npm run dev
+npm run build
+npm run preview
 ```
-`npm install` also creates `package-lock.json`; commit it.
 
-## Notes
-- Photos are Unsplash links by default (needs internet). Fonts load from Google Fonts in `index.html`.
-- Production: deploy `dist/` to any static host. Three.js is split into its own chunk.
-- The site is marked `noindex` (fictional development). Remove that meta tag for a real launch.
+## Concept disclosure
+
+ARVEN is fictional and presented for design / technology demonstration only. The photography is public reference imagery and does not represent actual project renders, specifications or availability.
