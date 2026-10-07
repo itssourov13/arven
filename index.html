@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Alvenar Residences — Dubai Water Canal</title>
-<meta name="description" content="A concept build by GOAT Technologies. Fictional development, not for sale.">
+<title>ARVEN Residences — Dubai Water Canal</title>
+<meta name="description" content="ARVEN Residences — a fictional waterfront residence concept shaped around light, water and space.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%2308090B'/><text x='16' y='23' font-family='Georgia' font-size='17' fill='%23C2A36B' text-anchor='middle'>A</text></svg>">
+
 </head>
 <body>
 
@@ -17,76 +18,87 @@
 <div class="cur" aria-hidden="true"></div>
 <div class="cur-r" aria-hidden="true"></div>
 
-<!-- preloader -->
 <div class="pre-curtain" aria-hidden="true"></div>
 <div class="pre" aria-hidden="true">
-  <div class="pre-mark">ALVENAR</div>
+  <div class="pre-mark">ARVEN</div>
   <div class="pre-bar"><i></i></div>
   <div class="pre-num">000</div>
 </div>
 
-<!-- nav -->
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="mark">ALVENAR <i>ألفينار</i></a>
-    <nav class="nav-l">
-      <a href="#tower"  data-t="n1">The Tower</a>
-      <a href="#amen"   data-t="n5">Amenities</a>
-      <a href="#res"    data-t="n2">Residences</a>
-      <a href="#loc"    data-t="n3">Location</a>
-      <a href="#enq"    data-t="n4">Enquire</a>
+    <a href="#top" class="mark" aria-label="ARVEN Residences home">ARVEN <i>آرفن</i></a>
+    <nav class="nav-l" aria-label="Primary">
+      <a href="#address" data-t="n1">The Address</a>
+      <a href="#res" data-t="n2">Residences</a>
+      <a href="#club" data-t="n3">The Club</a>
+      <a href="#loc" data-t="n4">Location</a>
+      <a href="#preview" data-t="n5">Private Preview</a>
     </nav>
     <div class="nav-r">
-      <button class="lang" id="langBtn">عربي</button>
+      <button class="lang" id="langBtn" aria-label="Switch language">عربي</button>
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     </div>
   </div>
 </header>
+
 <nav class="menu" id="menu" aria-label="Menu">
-  <a href="#tower" data-t="n1">The Tower</a><a href="#amen" data-t="n5">Amenities</a>
-  <a href="#res" data-t="n2">Residences</a><a href="#loc" data-t="n3">Location</a>
-  <a href="#enq" data-t="n4">Enquire</a>
+  <a href="#address" data-t="n1">The Address</a>
+  <a href="#res" data-t="n2">Residences</a>
+  <a href="#club" data-t="n3">The Club</a>
+  <a href="#loc" data-t="n4">Location</a>
+  <a href="#preview" data-t="n5">Private Preview</a>
 </nav>
 
-<!-- ============ HERO ============ -->
+<main>
 <section class="hero" id="top">
-  <div class="hero-fallback" aria-hidden="true"></div>
-  <canvas id="gl" data-img="hero"></canvas>
+  <img class="hero-image" data-img="hero" alt="" aria-hidden="true">
+  <canvas id="gl" data-img="hero" aria-hidden="true"></canvas>
   <div class="hero-veil"></div>
-  <div class="wrap hero-c">
-    <span class="kicker" data-t="kick">Dubai Water Canal, launching 2027</span>
+  <div class="hero-c wrap">
+    <span class="kicker" data-t="kick">Dubai Water Canal · A private collection</span>
     <h1>
-      <span class="rvline" data-t="h1a">ALVENAR</span>
+      <span class="rvline" data-t="h1a">ARVEN</span>
       <span class="rvline" data-t="h1b">RESIDENCES</span>
     </h1>
+    <p class="hero-tagline" data-t="tagline">Where the city meets stillness.</p>
     <div class="hero-sub">
-      <div class="hero-act">
-        <p data-t="lede">Forty-two storeys above the water.</p>
-        <a href="#enq" class="mag solid hero-cta"><span data-t="cta">Register interest</span></a>
+      <div class="hero-copy">
+        <p data-t="lede">Forty-two storeys above the canal. Ninety-one residences shaped by light, water and space.</p>
+        <div class="hero-actions">
+          <a href="#res" class="mag solid hero-cta"><span data-t="cta">Explore residences</span></a>
+          <a href="#preview" class="text-link"><span data-t="cta2">Private viewing</span><i></i></a>
+        </div>
       </div>
       <div class="scroll-cue"><i></i><span data-t="scroll">Scroll</span></div>
     </div>
   </div>
+  <div class="hero-meta"><span>Dubai / UAE</span><span>01—12</span></div>
 </section>
 
-<!-- ============ MANIFESTO ============ -->
-<section class="sec mani">
-  <div class="wrap">
-    <h2 data-t="mani">We did not set out to build the tallest address in Dubai.</h2>
+<section class="sec mani" aria-labelledby="manifesto-title">
+  <div class="wrap manifesto-grid">
+    <div>
+      <span class="eyebrow">01 / Manifesto</span>
+    </div>
+    <div>
+      <h2 id="manifesto-title" data-t="mani">Dubai is built for motion. ARVEN is made for the pause.</h2>
+      <p class="fade manifesto-copy" data-t="mani_p">A fictional waterfront residence concept shaped around the things the city makes rare: stillness, privacy, natural light and an uninterrupted relationship with water.</p>
+    </div>
   </div>
 </section>
 
-<!-- ============ TOWER (pinned) ============ -->
-<section class="tower" id="tower">
+<section class="tower" id="address">
   <div class="tower-stick">
-    <img loading="lazy" decoding="async" class="tower-img" data-img="tower" alt="Alvenar tower rising above the Dubai Water Canal">
+    <img class="tower-img" data-img="tower" alt="Concept visualization of a contemporary residential tower at dusk">
     <div class="tower-mask"></div>
+    <div class="tower-grain"></div>
     <div class="tower-cap">
-      <span class="eyebrow" data-t="tower_eye">The Tower</span>
-      <h2 data-t="tower_h">Rising from the canal</h2>
-      <p data-t="tower_p">A single slender volume.</p>
+      <span class="eyebrow" data-t="address_eye">The Address</span>
+      <h2 data-t="address_h">A different relationship with the city</h2>
+      <p data-t="address_p">Turned four degrees from the urban grid, ARVEN opens its architecture towards water, light and the changing horizon.</p>
     </div>
-    <div class="floors">
+    <div class="floors" aria-hidden="true">
       <span class="floor">42 — SKY VILLA</span>
       <span class="floor">38 — PENTHOUSE</span>
       <span class="floor">31 — DUPLEX</span>
@@ -98,128 +110,171 @@
   </div>
 </section>
 
-<div class="stats">
-  <div class="stat"><b data-count="42">0</b><span data-t="s1">Storeys</span></div>
-  <div class="stat"><b data-count="91">0</b><span data-t="s2">Residences</span></div>
-  <div class="stat"><b data-count="4">0</b><span data-t="s3">Sky gardens</span></div>
-  <div class="stat"><b data-count="186">0</b><span data-t="s4">Metres</span></div>
-</div>
+<section class="stats" aria-label="Project figures">
+  <div class="stat"><span class="stat-index">01</span><b data-count="42">0</b><span data-t="s1">Storeys</span></div>
+  <div class="stat"><span class="stat-index">02</span><b data-count="91">0</b><span data-t="s2">Residences</span></div>
+  <div class="stat"><span class="stat-index">03</span><b data-count="4">0</b><span data-t="s3">Sky gardens</span></div>
+  <div class="stat"><span class="stat-index">04</span><b data-count="186">0</b><span data-t="s4">Metres</span></div>
+</section>
 
-<!-- ============ ARCHITECTURE ============ -->
-<section class="sec arch" id="arch">
+<section class="sec arch" id="architecture">
   <div class="wrap arch-g">
-    <figure class="arch-img tilt"><img loading="lazy" decoding="async" data-img="tower" alt="The tower seen from the canal"></figure>
+    <figure class="arch-img tilt">
+      <img loading="lazy" decoding="async" data-img="pool" alt="Contemporary rooftop pool and architecture at dusk">
+      <figcaption>Concept visual / public reference image</figcaption>
+    </figure>
     <div class="arch-t">
       <span class="eyebrow fade" data-t="arch_eye">Architecture</span>
-      <h2 class="rv"><span data-t="arch_h">A tower turned four degrees</span></h2>
-      <ul class="arch-facts fade">
-        <li data-t="arch1">Off the grid, so every view is water</li>
-        <li data-t="arch2">Glass fritted against the afternoon sun</li>
-        <li data-t="arch3">Balconies cut deep into the volume</li>
-      </ul>
+      <h2 class="rv"><span data-t="arch_h">A building composed around the view</span></h2>
+      <p class="fade arch-intro" data-t="arch_intro">Three design decisions define the address: a subtle turn, deeper shade and rooms arranged for the horizon.</p>
+      <ol class="arch-facts">
+        <li class="fade"><b>01</b><div><strong data-t="arch1">The Turn</strong><span data-t="arch1s">Four degrees off the grid, so the building opens instead of closing in.</span></div></li>
+        <li class="fade"><b>02</b><div><strong data-t="arch2">The Light</strong><span data-t="arch2s">Deep balconies and filtered glazing soften Dubai's strongest afternoon sun.</span></div></li>
+        <li class="fade"><b>03</b><div><strong data-t="arch3">The View</strong><span data-t="arch3s">Every principal room is composed around what lies beyond the glass.</span></div></li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- ============ INTERIORS (horizontal) ============ -->
-<section class="sec" style="padding-bottom:0">
-  <div class="wrap">
+<section class="sec section-intro">
+  <div class="wrap intro-grid">
     <span class="eyebrow fade" data-t="int_eye">Interiors</span>
-    <h2 class="rv" style="font-size:clamp(32px,5.6vw,80px)"><span data-t="int_h">Rooms that hold the light</span></h2>
+    <h2 class="rv"><span data-t="int_h">Rooms composed around light.</span></h2>
   </div>
 </section>
 
-<section class="hscroll">
+<section class="hscroll" aria-label="Interior collection">
   <div class="hscroll-stick">
     <div class="htrack">
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="arrival" alt="Luxury arrival lobby">
-        <figcaption class="cap"><b data-t="g1">The Arrival</b><span>01 / 06</span></figcaption></figure>
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="living" alt="Luxury residence living room">
-        <figcaption class="cap"><b data-t="g2">Living</b><span>02 / 06</span></figcaption></figure>
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="kitchen" alt="Contemporary luxury kitchen">
-        <figcaption class="cap"><b data-t="g3">The Kitchen</b><span>03 / 06</span></figcaption></figure>
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="suite" alt="Principal bedroom suite">
-        <figcaption class="cap"><b data-t="g4">Principal Suite</b><span>04 / 06</span></figcaption></figure>
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="garden" alt="Sky garden terrace">
-        <figcaption class="cap"><b data-t="g5">Sky Garden</b><span>05 / 06</span></figcaption></figure>
-      <figure class="hcard"><img loading="lazy" decoding="async" data-img="pool" alt="Rooftop pool deck at dusk">
-        <figcaption class="cap"><b data-t="g6">The Pool Deck</b><span>06 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="arrival" alt="Warm modern luxury living room"><figcaption class="cap"><b data-t="g1">The Arrival</b><span>01 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="living" alt="Minimalist luxury living room in warm earth tones"><figcaption class="cap"><b data-t="g2">Living</b><span>02 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="kitchen" alt="Contemporary kitchen with wood and stone finishes"><figcaption class="cap"><b data-t="g3">The Kitchen</b><span>03 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="suite" alt="Warm minimalist luxury bedroom interior"><figcaption class="cap"><b data-t="g4">Principal Suite</b><span>04 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="garden" alt="Rooftop infinity pool with city skyline at dusk"><figcaption class="cap"><b data-t="g5">Sky Garden</b><span>05 / 06</span></figcaption></figure>
+      <figure class="hcard"><img loading="lazy" decoding="async" data-img="pool" alt="Waterfront-inspired pool terrace at twilight"><figcaption class="cap"><b data-t="g6">The Pool Deck</b><span>06 / 06</span></figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
-<div class="marq">
+<div class="marq" aria-hidden="true">
   <div class="marq-in">
-    <span>ALVENAR</span><span>ألفينار</span><span>RESIDENCES</span><span>2027</span>
-    <span>DUBAI</span><span>ألفينار</span>
+    <span>ARVEN</span><span>آرفن</span><span>RESIDENCES</span><span>DUBAI</span><span>WATER</span><span>LIGHT</span>
   </div>
 </div>
 
-<!-- ============ AMENITIES ============ -->
-<section class="sec" id="amen">
+<section class="sec club" id="club">
   <div class="wrap">
-    <span class="eyebrow fade" data-t="am_eye">Amenities</span>
-    <h2 class="rv" style="font-size:clamp(32px,5.6vw,80px)"><span data-t="am_h">Life above the waterline</span></h2>
-    <div class="amen-stage">
-      <figure class="layer a" data-speed="0.5"><img loading="lazy" data-img="pool" alt="Infinity pool deck"></figure>
-      <figure class="layer b" data-speed="1.1"><img loading="lazy" data-img="garden" alt="Sky garden"></figure>
-      <figure class="layer c" data-speed="1.7"><img loading="lazy" data-img="living" alt="Residents lounge"></figure>
+    <div class="section-head split-head">
+      <div><span class="eyebrow fade" data-t="club_eye">The Club</span></div>
+      <div><h2 class="rv"><span data-t="club_h">A private layer of life above the city.</span></h2><p class="fade" data-t="club_p">Wellness, water, dining and quiet spaces are treated as part of the residence—not additions around it.</p></div>
     </div>
-    <div class="amen-list fade">
-      <div><span data-t="a1">Infinity pool</span><small data-t="a1s">Level 24, facing the canal</small></div>
-      <div><span data-t="a2">Sky gardens</span><small data-t="a2s">Four, planted by the hour of light</small></div>
-      <div><span data-t="a3">Spa and hammam</span><small data-t="a3s">Private, by appointment</small></div>
-      <div><span data-t="a4">Marina berths</span><small data-t="a4s">Ten metres of water, one step away</small></div>
+
+    <div class="club-stage">
+      <figure class="layer a" data-speed=".55"><img loading="lazy" decoding="async" data-img="pool" alt="Rooftop infinity pool at dusk"></figure>
+      <figure class="layer b" data-speed="1.1"><img loading="lazy" decoding="async" data-img="spa" alt="Modern wooden wellness interior"></figure>
+      <figure class="layer c" data-speed="1.6"><img loading="lazy" decoding="async" data-img="living" alt="Private residents lounge"></figure>
+      <span class="club-marker">ARVEN / PRIVATE</span>
+    </div>
+
+    <div class="club-list">
+      <article class="club-item"><span>01</span><div><h3 data-t="c1">The Water Room</h3><p data-t="c1s">Infinity pool · sunset terrace · private cabanas</p></div></article>
+      <article class="club-item"><span>02</span><div><h3 data-t="c2">The Wellness House</h3><p data-t="c2s">Hammam · sauna · recovery lounge · treatment rooms</p></div></article>
+      <article class="club-item"><span>03</span><div><h3 data-t="c3">The Study</h3><p data-t="c3s">Library · work lounge · private meeting room</p></div></article>
+      <article class="club-item"><span>04</span><div><h3 data-t="c4">The Dining Room</h3><p data-t="c4s">Private dining · residents' kitchen · hosted evenings</p></div></article>
     </div>
   </div>
 </section>
 
-<!-- ============ RESIDENCES ============ -->
-<section class="sec" id="res">
-  <div class="wrap" style="margin-bottom:60px">
-    <span class="eyebrow fade" data-t="res_eye">Residences</span>
-    <h2 class="rv" style="font-size:clamp(32px,5.6vw,80px)"><span data-t="res_h">Ninety-one ways to live here</span></h2>
-  </div>
+<section class="sec materials" id="materials">
   <div class="wrap">
+    <div class="section-head split-head">
+      <div><span class="eyebrow fade" data-t="mat_eye">Materials</span></div>
+      <div><h2 class="rv"><span data-t="mat_h">Quiet materials. Precise details.</span></h2><p class="fade" data-t="mat_p">Travertine, smoked oak, brushed bronze and woven linen create a warm, restrained palette designed to age well.</p></div>
+    </div>
+    <div class="material-grid">
+      <article class="material tilt"><div class="material-swatch travertine"></div><div><span>01</span><h3 data-t="m1">Travertine</h3></div></article>
+      <article class="material tilt"><div class="material-swatch oak"></div><div><span>02</span><h3 data-t="m2">Smoked Oak</h3></div></article>
+      <article class="material tilt"><div class="material-swatch bronze"></div><div><span>03</span><h3 data-t="m3">Brushed Bronze</h3></div></article>
+      <article class="material tilt"><div class="material-swatch linen"></div><div><span>04</span><h3 data-t="m4">Woven Linen</h3></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec residences" id="res">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div><span class="eyebrow fade" data-t="res_eye">The Residences</span></div>
+      <div><h2 class="rv"><span data-t="res_h">Choose your perspective.</span></h2><p class="fade" data-t="res_p">Six residence types, each designed around light, privacy and the water beyond.</p></div>
+    </div>
+
     <div class="res-grid">
-      <article class="res"><span class="no">01</span><h3 data-t="r1">One Bedroom</h3>
-        <div class="sz">812 – 940 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 2,150,000</div></article>
-      <article class="res"><span class="no">02</span><h3 data-t="r2">Two Bedroom</h3>
-        <div class="sz">1,310 – 1,580 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 3,420,000</div></article>
-      <article class="res"><span class="no">03</span><h3 data-t="r3">Three Bedroom</h3>
-        <div class="sz">1,940 – 2,260 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 5,180,000</div></article>
-      <article class="res"><span class="no">04</span><h3 data-t="r4">Duplex</h3>
-        <div class="sz">3,100 – 3,480 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 8,900,000</div></article>
-      <article class="res"><span class="no">05</span><h3 data-t="r5">Sky Villa</h3>
-        <div class="sz">5,240 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 16,400,000</div></article>
-      <article class="res"><span class="no">06</span><h3 data-t="r6">Penthouse</h3>
-        <div class="sz">7,860 <span data-t="sqft">sq ft</span></div>
-        <div class="pr"><small data-t="from">From</small>AED 29,000,000</div></article>
+      <article class="res-card"><span class="no">01</span><h3 data-t="r1">One Bedroom</h3><p>812 – 940 <span data-t="sqft">sq ft</span></p><strong>AED 2.15M</strong></article>
+      <article class="res-card"><span class="no">02</span><h3 data-t="r2">Two Bedroom</h3><p>1,310 – 1,580 <span data-t="sqft">sq ft</span></p><strong>AED 3.42M</strong></article>
+      <article class="res-card"><span class="no">03</span><h3 data-t="r3">Three Bedroom</h3><p>1,940 – 2,260 <span data-t="sqft">sq ft</span></p><strong>AED 5.18M</strong></article>
+      <article class="res-card"><span class="no">04</span><h3 data-t="r4">Duplex</h3><p>3,100 – 3,480 <span data-t="sqft">sq ft</span></p><strong>AED 8.90M</strong></article>
+      <article class="res-card"><span class="no">05</span><h3 data-t="r5">Sky Villa</h3><p>5,240 <span data-t="sqft">sq ft</span></p><strong>AED 16.4M</strong></article>
+      <article class="res-card"><span class="no">06</span><h3 data-t="r6">Penthouse</h3><p>7,860 <span data-t="sqft">sq ft</span></p><strong>AED 29.0M</strong></article>
     </div>
   </div>
 </section>
 
-<!-- ============ LIFESTYLE ============ -->
+<section class="sec explorer" id="explorer">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div><span class="eyebrow fade" data-t="explore_eye">Residence Explorer</span></div>
+      <div><h2 class="rv"><span data-t="explore_h">Compare the collection.</span></h2><p class="fade" data-t="explore_p">Concept layouts for the digital experience. Final plans and specifications are subject to the fictional development brief.</p></div>
+    </div>
+
+    <div class="explorer-shell" data-res-explorer>
+      <aside class="explorer-tabs" aria-label="Residence types">
+        <button class="on" data-res-option="one"><span>01</span><b data-t="r1">One Bedroom</b></button>
+        <button data-res-option="two"><span>02</span><b data-t="r2">Two Bedroom</b></button>
+        <button data-res-option="three"><span>03</span><b data-t="r3">Three Bedroom</b></button>
+        <button data-res-option="duplex"><span>04</span><b data-t="r4">Duplex</b></button>
+        <button data-res-option="villa"><span>05</span><b data-t="r5">Sky Villa</b></button>
+        <button data-res-option="penthouse"><span>06</span><b data-t="r6">Penthouse</b></button>
+      </aside>
+
+      <div class="explorer-panel">
+        <div class="plan-wrap">
+          <div class="plan" data-res-plan="one" aria-label="Concept residence layout">
+            <i class="plan-wall w1"></i><i class="plan-wall w2"></i><i class="plan-wall w3"></i><i class="plan-wall w4"></i>
+            <i class="plan-room r1"></i><i class="plan-room r2"></i><i class="plan-room r3"></i><i class="plan-room r4"></i>
+            <span class="plan-label">WATER / HORIZON</span>
+            <span class="plan-caption">CONCEPT LAYOUT</span>
+          </div>
+        </div>
+        <div class="explorer-copy">
+          <span class="explorer-type" data-res-type>01</span>
+          <h3 data-res-name>One Bedroom</h3>
+          <div class="explorer-size" data-res-size>812 – 940 sq ft</div>
+          <div class="explorer-meta"><span data-res-view>Water-facing</span><b data-res-price>AED 2.15M</b></div>
+          <p data-res-detail>Open plan living · private terrace · full-height glazing</p>
+          <a href="#preview" class="mag solid"><span data-t="exp_cta">Request residence details</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="life" id="life" aria-label="Lifestyle">
   <div class="life-frame">
-    <img loading="lazy" decoding="async" data-img="pool" alt="Pool deck above the canal at dusk">
-    <h2 class="life-cap" data-t="life_h">Mornings on the canal. Evenings above it.</h2>
+    <img loading="lazy" decoding="async" data-img="dusk" alt="Dubai skyline and waterfront at dusk">
+    <div class="life-veil"></div>
+    <div class="wrap life-copy">
+      <span class="eyebrow" data-t="life_eye">From first light to last light</span>
+      <h2 class="life-cap" data-t="life_h">Mornings on the canal. Evenings above it.</h2>
+      <p data-t="life_p">Morning begins slowly at the water's edge. By afternoon, the city moves below. At dusk, the skyline becomes part of the room.</p>
+    </div>
   </div>
 </section>
 
-<!-- ============ LOCATION ============ -->
-<section class="sec" id="loc">
+<section class="sec location" id="loc">
   <div class="wrap loc">
     <div>
       <span class="eyebrow fade" data-t="loc_eye">Location</span>
       <h2 class="rv"><span data-t="loc_h">On the water, in the middle of everything</span></h2>
-      <p class="fade" data-t="loc_p">The canal on one side, Business Bay on the other.</p>
+      <p class="fade" data-t="loc_p">A fictional Dubai Water Canal address positioned as a quiet base for the city's cultural, business and leisure districts.</p>
       <div class="dists fade">
         <div class="dist"><span data-t="d1">Downtown Dubai</span><b>6 <small data-t="min">min</small></b></div>
         <div class="dist"><span data-t="d2">DIFC</span><b>9 <small data-t="min">min</small></b></div>
@@ -229,52 +284,58 @@
       </div>
     </div>
     <div class="locmap fade">
-      <img loading="lazy" decoding="async" data-img="map" alt="Map showing the Dubai Water Canal location">
+      <img loading="lazy" decoding="async" data-img="map" alt="Stylized map reference for the fictional Dubai Water Canal location">
+      <span class="map-label">ARVEN / DUBAI WATER CANAL</span>
       <span class="pin" style="left:48%;top:52%"></span>
     </div>
   </div>
 </section>
 
-<!-- ============ ENQUIRE ============ -->
-<section class="sec" id="enq">
-  <div class="wrap enq">
+<section class="sec preview" id="preview">
+  <div class="wrap preview-grid">
     <div>
-      <span class="eyebrow fade" data-t="enq_eye">Register interest</span>
-      <h2 class="rv"><span data-t="enq_h">Before the public launch</span></h2>
-      <p class="fade" data-t="enq_p" style="color:rgba(237,234,228,.6);max-width:38ch;margin-top:24px">The first release is ninety-one residences.</p>
+      <span class="eyebrow fade" data-t="preview_eye">Private Preview</span>
+      <h2 class="rv"><span data-t="preview_h">A considered first look.</span></h2>
+      <p class="fade" data-t="preview_p">The first collection is presented privately. Tell us how you would like to experience ARVEN.</p>
     </div>
-    <form id="enqForm" class="fade" novalidate>
-      <div class="field"><input type="text" id="n" required><label for="n" data-t="f_name">Full name</label><i></i></div>
-      <div class="field"><input type="email" id="e" required><label for="e" data-t="f_email">Email address</label><i></i></div>
-      <div class="field"><input type="tel" id="p" required><label for="p" data-t="f_phone">Phone</label><i></i></div>
-      <div class="field"><textarea id="m" rows="2" required></textarea><label for="m" data-t="f_msg">Anything we should know?</label><i></i></div>
-      <button type="submit" class="mag solid"><span data-t="submit">Register interest</span></button>
-      <p class="enq-note" data-t="note">This is a concept build.</p>
+    <form id="enqForm" class="preview-form fade" novalidate>
+      <div class="field"><input type="text" id="n" required autocomplete="name"><label for="n" data-t="f_name">Full name</label><i></i></div>
+      <div class="field"><input type="email" id="e" required autocomplete="email"><label for="e" data-t="f_email">Email address</label><i></i></div>
+      <div class="field"><input type="tel" id="p" required autocomplete="tel"><label for="p" data-t="f_phone">Phone</label><i></i></div>
+      <div class="field field-select">
+        <select id="r" required aria-label="Residence preference">
+          <option value="" data-t="rsel">Select a residence</option>
+          <option value="one" data-t="r1">One Bedroom</option>
+          <option value="two" data-t="r2">Two Bedroom</option>
+          <option value="three" data-t="r3">Three Bedroom</option>
+          <option value="duplex" data-t="r4">Duplex</option>
+          <option value="villa" data-t="r5">Sky Villa</option>
+          <option value="penthouse" data-t="r6">Penthouse</option>
+        </select>
+        <i></i>
+      </div>
+      <div class="field"><textarea id="m" rows="2"></textarea><label for="m" data-t="f_msg">Anything we should know?</label><i></i></div>
+      <button type="submit" class="mag solid"><span data-t="submit">Request private viewing</span></button>
+      <p class="enq-note" data-t="note">Concept project. Nothing is submitted anywhere and no personal data is collected.</p>
     </form>
   </div>
 </section>
+</main>
 
-<!-- ============ FOOTER ============ -->
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr-g">
-      <div class="mark">ALVENAR <i>ألفينار</i></div>
-      <div><span data-t="ftr_c">Contact</span></div>
-      <div><span data-t="ftr_l">Legal</span></div>
-      <div><span data-t="ftr_f">Follow</span></div>
+      <div class="mark">ARVEN <i>آرفن</i></div>
+      <div><span data-t="ftr_c">Project</span><small>ARVEN RESIDENCES</small></div>
+      <div><span data-t="ftr_l">Concept</span><small>Dubai Water Canal</small></div>
+      <div><span data-t="ftr_f">Follow</span><small>2026 / Independent Study</small></div>
     </div>
     <div class="ftr-b">
-      <span>© 2026 ALVENAR RESIDENCES — CONCEPT</span>
-      <span>DESIGNED &amp; BUILT BY <a href="https://goattechnologies.ae" target="_blank" rel="noopener">GOAT TECHNOLOGIES</a></span>
+      <span data-t="ribbon">Independent concept project · 2026 · Not for sale</span>
+      <span data-t="legal">ARVEN is a fictional residential development concept presented for design and technology demonstration only. Images are public reference imagery and are not project renders.</span>
     </div>
   </div>
 </footer>
-
-<div class="ribbon">
-  <span data-t="ribbon_a">Concept build — a demonstration project by</span>
-  <b>GOAT Technologies</b> ·
-  <span data-t="ribbon_b">Fictional development. Not for sale.</span>
-</div>
 
 <script type="module" src="/src/main.js"></script>
 </body>

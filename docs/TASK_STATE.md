@@ -1,10 +1,29 @@
 # Task State
 
 ## Completed
-Project conversion and config; module split; Architecture, Amenities and Lifestyle sections; mobile menu with stagger, Esc and scroll lock; active nav; hero CTA and scroll-out; pointer tilt and light; masked reveal; typography refinement layer; image config; performance fixes; full documentation tree.
+
+- V2 branch created: `v2/brand-arven`
+- ARVEN brand and content system
+- Public image refresh
+- Hero / manifesto / address / architecture rewrite
+- The Club
+- Materials
+- Residence Explorer
+- Residence-focused enquiry form
+- EN / AR RTL pass
+- Responsive refinements
+- Accessibility alt text and focus states
+- Favicon cleanup
+- Build + browser smoke verification
+- Documentation refresh
 
 ## Intentionally deferred
-Full per-section typographic re-scale of the original blocks; deleting dead `gsapOK` branches; per-language font subsetting.
 
-## Requires external or manual input
-Real renders and floor plans; verified copy and figures; native Arabic review; `npm install` (creates the lockfile) and a browser pass on desktop and mobile.
+- Real project renders and floorplans
+- Native Arabic copy review
+- Production domain/trademark validation
+- Final physical-device visual QA
+
+## Next likely stage
+
+Replace concept imagery and fictional project figures with approved real content, then perform the final production QA pass.

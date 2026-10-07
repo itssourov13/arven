@@ -19,7 +19,7 @@ export function initCursor(){
     dot.style.transform = `translate(${mx}px,${my}px)`;
     if (!run) { run = true; requestAnimationFrame(loop); }
   }, { passive:true });
-  document.querySelectorAll("a,button,.hcard,.res,input,textarea")
+  document.querySelectorAll("a,button,.hcard,.res-card,.material,input,textarea,select")
     .forEach(el => {
       el.addEventListener("mouseenter", () => ring.classList.add("big"));
       el.addEventListener("mouseleave", () => ring.classList.remove("big"));

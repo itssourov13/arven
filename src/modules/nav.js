@@ -30,7 +30,7 @@ export function initNav(){
 /* residence cards: light follows the pointer */
 export function initSpot(){
   if (TOUCH) return;
-  document.querySelectorAll(".res").forEach(c => c.addEventListener("pointermove", e => {
+  document.querySelectorAll(".res-card").forEach(c => c.addEventListener("pointermove", e => {
     const r = c.getBoundingClientRect();
     c.style.setProperty("--mx", (e.clientX - r.left) + "px");
     c.style.setProperty("--my", (e.clientY - r.top) + "px");

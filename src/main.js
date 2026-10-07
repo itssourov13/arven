@@ -9,28 +9,45 @@ import { initPre } from "./modules/preloader.js";
 import { initNav, initSpot } from "./modules/nav.js";
 import { initTilt } from "./modules/pointer.js";
 import { initForm } from "./modules/form.js";
+import { initResidenceExplorer } from "./modules/residences.js";
 
-/** Resolve data-img keys against config/images.js (the canvas gets data-src for the shader). */
 function resolveImages(){
   document.querySelectorAll("[data-img]").forEach(el => {
     const url = IMAGES[el.dataset.img];
     if (!url) return;
-    if (el.tagName === "CANVAS") el.dataset.src = url; else el.src = url;
+    if (el.tagName === "CANVAS") el.dataset.src = url;
+    else el.src = url;
   });
 }
 
 function boot(){
   resolveImages();
   applyLang();
+
   const lb = document.getElementById("langBtn");
   if (lb) lb.onclick = () => { toggleLang(); location.reload(); };
 
   if (!initGL()) {
-    const fb = document.querySelector(".hero-fallback"), cv = document.getElementById("gl");
-    if (fb && cv) { fb.style.backgroundImage = `url("${cv.dataset.src}")`; cv.style.display = "none"; }
+    const fb = document.querySelector(".hero-fallback");
+    const cv = document.getElementById("gl");
+    if (fb && cv) {
+      fb.style.backgroundImage = "url(" + cv.dataset.src + ")";
+      cv.style.display = "none";
+    }
   }
-  initCursor(); initMagnetic(); initForm(); initScroll(); initNav(); initSpot(); initTilt(); initPre();
+
+  initCursor();
+  initMagnetic();
+  initForm();
+  initResidenceExplorer();
+  initScroll();
+  initNav();
+  initSpot();
+  initTilt();
+  initPre();
   document.documentElement.classList.add("ready");
 }
 
-document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", boot) : boot();
+document.readyState === "loading"
+  ? document.addEventListener("DOMContentLoaded", boot)
+  : boot();

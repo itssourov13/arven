@@ -114,6 +114,7 @@ export function initGL(){
 
   // load the hero photograph; the shader works without it too
   const url = cv.dataset.src;
+  cv.style.opacity = "0.22";
   if (url) {
     const loader = new THREE.TextureLoader();
     loader.setCrossOrigin("anonymous");
@@ -123,7 +124,9 @@ export function initGL(){
       uniforms.uTex.value = tex;
       uniforms.uTexAsp.value = tex.image.width / tex.image.height;
       uniforms.uHasTex.value = 1;
-    }, undefined, () => { /* keep the procedural fallback */ });
+    }, undefined, () => {
+      // The CSS hero image remains the visual base if the shader texture cannot load.
+    });
   }
 
   addEventListener("mousemove", e => {
