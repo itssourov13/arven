@@ -10,6 +10,7 @@ import { initNav, initSpot } from "./modules/nav.js";
 import { initTilt } from "./modules/pointer.js";
 import { initForm } from "./modules/form.js";
 import { initResidenceExplorer } from "./modules/residences.js";
+import { initV3Experience } from "./modules/v3-experience.js";
 
 function resolveImages(){
   document.querySelectorAll("[data-img]").forEach(el => {
@@ -40,6 +41,7 @@ function boot(){
   initMagnetic();
   initForm();
   initResidenceExplorer();
+  initV3Experience();
   initScroll();
   initNav();
   initSpot();

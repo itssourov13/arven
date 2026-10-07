@@ -1,9 +1,9 @@
 {
   "name": "arven-residences",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
-  "description": "Cinematic bilingual luxury waterfront residence concept for a fictional Dubai Water Canal development.",
+  "description": "ARVEN V3 — an immersive bilingual digital residence experience concept for a fictional Dubai Water Canal development.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
